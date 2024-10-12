@@ -20,7 +20,7 @@ export default function Stuff(props) {
 
   return (
     <group {...props} dispose={null}
-      scale={[3, 3, 3]}
+      scale={[3,3,3]}
       position={[0, -2, 0]}
       ref={modelRef}
     >
