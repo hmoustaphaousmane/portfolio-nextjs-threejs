@@ -6,7 +6,7 @@ const HomeButton = () => {
   return (
       <Link
         href={'/'} target={'self'}
-        className='text-foreground rounded-full flex items-center justify-center custom-bg fixed top-4 left-4 w-fit self-start'
+        className='text-foreground rounded-full flex items-center justify-center custom-bg fixed top-4 left-4 w-fit self-start z-50'
         aria-label={'home'} name={'home'}>
         <span className='relative w-14 h-14 p-4 hover:text-accent
         '>

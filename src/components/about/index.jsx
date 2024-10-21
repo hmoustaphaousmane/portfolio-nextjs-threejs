@@ -3,10 +3,10 @@ import React from 'react'
 
 const ItemLayout = ({ children, className }) => (
   <div
-  className={clsx(
-    'custom-bg p-8 rounded-xl flex items-center justify-center space-y-8',
-    className
-  )}
+    className={clsx(
+      'custom-bg p-8 rounded-xl flex items-center justify-center space-y-8',
+      className
+    )}
   >
     {children}
   </div>
@@ -24,7 +24,7 @@ const AboutDetails = () => {
           <p className='font-light'>
             My journey in web development is powered by an array of mystical
             tools and languages, with JavaScript casting the core of my
-            enchantments. I wield frameworks like React.js and Next.js with
+            enchantments. I wield framewoks like React.js and Next.js with
             precision, crafting seamless portals (websites) that connect realms
             (users) across the digital universe. The ancient arts of the
             Jamstack empower me to create fast, secure, and dynamic experiences,
@@ -43,6 +43,51 @@ const AboutDetails = () => {
             4+ <sub className='font-semibold text-base'>years of experience</sub>
           </p>
         </ItemLayout>
+
+        <ItemLayout className={'col-span-4 !p-0'}>
+          <img
+            className='w-full h-auto'
+            src='https://github-readme-stats.vercel.app/api/top-langs/?username=hmoustaphaousmane&theme=transparent&hide_border=true&title_color=FEFE5B&text_color=FFFFFF&icon_color=FEFE5B&text_bold=false'
+            alt='hmoustaphousmane'
+            loading='lazy'
+          />
+        </ItemLayout>
+
+        <ItemLayout className={'col-span-8 !p-0'}>
+          <img
+            className='w-full h-auto'
+            src='https://github-readme-stats.vercel.app/api?username=hmoustaphaousmane&theme=transparent&hide_border=true&title_color=FEFE5B&text_color=FFFFFF&icon_color=FEFE5B&text_bold=false'
+            alt='hmoustaphousmane'
+            loading='lazy'
+          />
+        </ItemLayout>
+
+        <ItemLayout className={'col-span-full !p-0'}>
+          <img
+            className='w-full h-auto'
+            src='https://skillicons.dev/icons?i=css,django,flask,git,github,html,js,linux,mongodb,mysql,nodejs,npm,postgres,rails,redux,vite,vscode'
+            alt='hmoustaphousmane'
+            loading='lazy'
+          />
+        </ItemLayout>
+
+        <ItemLayout className={'col-span-6 !p-0'}>
+          <img
+            className='w-full h-auto'
+            src='https://github-readme-streak-stats.herokuapp.com?user=hmoustaphaousmane&theme=radical&hide_border=true&type=png&background=EB545400&ring=FEFE5B&currStreakLabel=FEFE5B'
+            alt='hmoustaphousmane'
+            loading='lazy'
+          />
+        </ItemLayout>
+
+<ItemLayout className={'col-span-6 !p-0'}>
+  <img
+    className='w-full h-auto'
+    src='https://github-readme-stats.vercel.app/api/pin/?username=hmoustaphaousmane&repo=loan-application-prediction&theme=transparent&hide_border=true&title_color=FEFE5B&text_color=FFFFFF&icon_color=FEFE5B&text_bold=false&description_line_count=2'
+    alt='hmoustaphousmane'
+    loading='lazy'
+  />
+</ItemLayout>
       </div>
     </section>
   )
