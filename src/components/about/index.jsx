@@ -1,17 +1,5 @@
-import clsx from 'clsx'
 import React from 'react'
-
-const ItemLayout = ({ children, className }) => (
-  <div
-    className={clsx(
-      'custom-bg p-6 sm:p-8 rounded-xl flex items-center justify-center space-y-8',
-      className
-    )}
-  >
-    {children}
-  </div>
-)
-
+import ItemLayout from './ItemLayout'
 
 const AboutDetails = () => {
   return (
@@ -80,14 +68,14 @@ const AboutDetails = () => {
           />
         </ItemLayout>
 
-<ItemLayout className={'col-span-full md:col-span-6 !p-0'}>
-  <img
-    className='w-full h-auto'
-    src='https://github-readme-stats.vercel.app/api/pin/?username=hmoustaphaousmane&repo=loan-application-prediction&theme=transparent&hide_border=true&title_color=FEFE5B&text_color=FFFFFF&icon_color=FEFE5B&text_bold=false&description_line_count=2'
-    alt='hmoustaphousmane'
-    loading='lazy'
-  />
-</ItemLayout>
+        <ItemLayout className={'col-span-full md:col-span-6 !p-0'}>
+          <img
+            className='w-full h-auto'
+            src='https://github-readme-stats.vercel.app/api/pin/?username=hmoustaphaousmane&repo=loan-application-prediction&theme=transparent&hide_border=true&title_color=FEFE5B&text_color=FFFFFF&icon_color=FEFE5B&text_bold=false&description_line_count=2'
+            alt='hmoustaphousmane'
+            loading='lazy'
+          />
+        </ItemLayout>
       </div>
     </section>
   )
